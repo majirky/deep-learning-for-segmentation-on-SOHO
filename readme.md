@@ -16,4 +16,4 @@ Streamlit run webapp.py
 ``` 
 Preview of webapp can be seen on image below
 
-<img src="figures/webapp-peak.png"  width="600" height="600">  
+<img src="figures/webapp-peak.png"  width="1920" height="943">  
