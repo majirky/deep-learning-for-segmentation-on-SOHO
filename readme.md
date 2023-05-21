@@ -1,9 +1,9 @@
 ## Deep learning for segmentation on SOHO images
 
 ### ABSTRACT
-(todo)   
+Solar activity has influence on many aspects, such as climate or technology. Therefore, it is important to monitor and identify phenomena occurring on the Sun in order to predict and better understand their impact on us. This work deals with the segmentation of coronal holes and active regions on images captured by the SOHO spacecraft, which has been monitoring the Sun since 1996. For segmentation we used a SCSS-Net convolutional neural network. The results of this work comprise new annotations of these two phenomena and their visualization, which can be used for further research on solar activity.   
 
-more details about code are in markdowns and docstrings
+More details about code are in markdowns and docstrings
 
 - [prerequisites](prerequisites/) contains steps for downloading data and installing necessary libraries
 - after downloading images provided in [prerequisites notebook](prerequisites/prerequisites.ipynb), [data folder](data/) should contain images for this project
