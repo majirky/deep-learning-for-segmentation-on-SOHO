@@ -49,9 +49,7 @@ def start_segmentation(path, event):
     for image in imgs_test:
         imgs_test_list.append(np.array(Image.open(image).convert("L").resize((IMG_SIZE, IMG_SIZE))))
 
-
     x_test = np.asarray(imgs_test_list, dtype=np.float32)/255
-
 
     x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2], 1)
 
@@ -68,8 +66,6 @@ def start_segmentation(path, event):
     model.load_weights(model_weights)
 
     y_pred = model.predict(x_test)
-
-    print(path)
 
     # make annotations on imgs
     annotations = create_contours(y_pred[0], target_size=(1024, 1024))

@@ -130,19 +130,11 @@ def decrement_counter(decrement_value=0):
 # -----------------------------------------------------
 
 
-st.set_page_config(page_title="eitData", layout="wide")
+st.set_page_config(page_title="DL on SOHO", layout="wide")
 
 st.title("Usage of deep learning for segmentation of selective events in solar corona")
 
-st.markdown(
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    " Magna fringilla urna porttitor rhoncus dolor purus non enim. Leo in vitae turpis massa sed elementum tempus egestas. "
-    "Sed viverra ipsum nunc aliquet. In arcu cursus euismod quis viverra nibh. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget."
-    " Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Tristique magna sit amet purus gravida quis blandit turpis cursus. "
-    "Risus in hendrerit gravida rutrum quisque. Lectus mauris ultrices eros in. Vitae auctor eu augue ut lectus arcu. Tortor condimentum lacinia quis vel"
-    " eros. Euismod elementum nisi quis eleifend. Hac habitasse platea dictumst quisque sagittis purus sit. Viverra suspendisse potenti nullam ac tortor"
-    " vitae purus faucibus ornare.")
-
+make_room(3)
 
 # page layout to make col1 for text, empty col that makes white space and col2 for image
 col1, colEMPTY, col2 = st.columns([0.5, 0.5, 1])
