@@ -197,8 +197,13 @@ with col1:
     if st.checkbox(f'segment {event}'):
         path_to_img_checked = find_image(date, event, cropped=True)
         # scss model segemtnation
-        image, area_coverage = scss_model.start_segmentation(path_to_img_checked, event)
-        st.markdown(f"{event_option} on this image cover ***{area_coverage}%*** of Sun's disk")
+        if "default" in path_to_img_checked:
+            # if there is no image of selected date, segmentation is not happening
+            image = Image.open(path_to_img)
+            pass
+        else:
+            image, area_coverage = scss_model.start_segmentation(path_to_img_checked, event)
+            st.markdown(f"{event_option} on this image cover ***{area_coverage}%*** of Sun's disk")
 
     else:
         image = Image.open(path_to_img)
