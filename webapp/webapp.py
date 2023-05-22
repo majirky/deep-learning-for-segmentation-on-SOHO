@@ -197,7 +197,7 @@ with col1:
     if st.checkbox(f'segment {event}'):
         path_to_img_checked = find_image(date, event, cropped=True)
         # scss model segemtnation
-        if "default" in path_to_img_checked:
+        if "missing" in path_to_img_checked:
             # if there is no image of selected date, segmentation is not happening
             image = Image.open(path_to_img)
             pass
